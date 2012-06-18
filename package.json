@@ -1,6 +1,12 @@
 {
   "name": "defer-tick",
   "version": "0.0.1",
+  "author": "Fedor Indutny <fedor@indutny.com>",
+  "homepage": "https://github.com/indutny/defer-tick",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/indutny/defer-tick.git"
+  },
   "main": "./lib/defer-tick.js",
   "dependencies": {
     "node-gyp": "0.5.x"
