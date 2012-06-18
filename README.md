@@ -1,3 +1,3 @@
-# deferTick([function])
+# deferTick([function]) [![Build Status](https://secure.travis-ci.org/indutny/defer-tick.png)](http://travis-ci.org/indutny/defer-tick)
 
 ...
