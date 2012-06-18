@@ -1,0 +1,16 @@
+{
+  "name": "defer-tick",
+  "version": "0.0.1",
+  "main": "./lib/defer-tick.js",
+  "dependencies": {
+    "node-gyp": "0.5.x"
+  },
+  "devDependencies": {
+    "mocha": "~1.2.0",
+    "async": "~0.1.22"
+  },
+  "scripts": {
+    "install": "node-gyp configure && node-gyp build",
+    "test": "mocha --reporter spec test/*-test.js"
+  }
+}
