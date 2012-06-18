@@ -31,7 +31,8 @@ static void DeferCallback(uv_work_t* work) {
   HandleScope scope;
 
   DeferRequest* req = container_of(work, DeferRequest, work);
-  MakeCallback(Context::GetCurrent()->Global(), req->callback, 0, NULL);
+  assert(!req->callback.IsEmpty());
+  req->callback->Call(Context::GetCurrent()->Global(), 0, NULL);
 
   req->callback.Dispose();
   req->callback.Clear();
