@@ -12,5 +12,8 @@
   "scripts": {
     "install": "node-gyp configure && node-gyp build",
     "test": "mocha --reporter spec test/*-test.js"
+  },
+  "engine": {
+    "node": ">= 0.6.0"
   }
 }
